@@ -182,6 +182,10 @@ public class UI {
         
     }
     
+    /**
+    * Displays a title for a new section of the host application
+    * @param title The title to display
+    */
     public static void sectionTitle(String title) {
     
         System.out.println("");
