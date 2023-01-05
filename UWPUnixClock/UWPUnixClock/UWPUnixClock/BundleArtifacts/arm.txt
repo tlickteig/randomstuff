@@ -1,0 +1,2 @@
+MainPackage=C:\Repos\UWPUnixClock\UWPUnixClock\UWPUnixClock\bin\ARM\Debug\UWPUnixClock_1.0.0.0_ARM_Debug.msix
+SymbolPackage=C:\Repos\UWPUnixClock\UWPUnixClock\UWPUnixClock\obj\ARM\Debug\Symbols\UWPUnixClock_1.0.0.0_ARM_Debug.appxsym

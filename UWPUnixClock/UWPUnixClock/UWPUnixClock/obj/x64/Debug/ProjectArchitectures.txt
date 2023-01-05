@@ -1,0 +1,1 @@
+C:\Repos\UWPUnixClock\UWPUnixClock\UWPUnixClock\UWPUnixClock.csproj;x64
