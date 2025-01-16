@@ -26,10 +26,15 @@ displayitems = [[' ', ' '], [' ', ' ']]
 delaytime = 50
 app = Flask(__name__)
 
-@app.before_first_request
+first_request = True
+
+@app.before_request
 def start_main_background_thread():
-    thread = threading.Thread(target=main_background_thread)
-    thread.start()
+    global first_request
+    if first_request:
+        thread = threading.Thread(target=main_background_thread)
+        thread.start()
+        first_request = False
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
@@ -375,3 +380,4 @@ def cpu_usage():
     return int(total / numberofsamples)
 
 #main()
+app.run()
